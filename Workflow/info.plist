@@ -195,7 +195,7 @@ Get in-line suggestions from Google Scholar’s search results via the `scholar`
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2023.0</string>
+	<string>2023.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-scholar-suggest-workflow/</string>
 </dict>

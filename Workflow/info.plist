@@ -6,6 +6,19 @@
 	<string>com.alfredapp.vitor.googlescholarsuggest</string>
 	<key>connections</key>
 	<dict>
+		<key>31F4F52E-E3BF-429D-9104-965310C817FB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>63F60794-BB56-4415-9372-BAF974C3A7E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>63F60794-BB56-4415-9372-BAF974C3A7E1</key>
 		<array>
 			<dict>
@@ -33,21 +46,13 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://scholar.google.com/scholar?q={query}</string>
+				<key>text</key>
+				<string>Search Google Scholar with Suggestions for '{query}'</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.trigger.fallback</string>
 			<key>uid</key>
-			<string>AB592125-9803-45FA-8F0D-0063A5AA45AE</string>
+			<string>31F4F52E-E3BF-429D-9104-965310C817FB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -144,6 +149,27 @@ function run(argv) {
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://scholar.google.com/scholar?q={query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>AB592125-9803-45FA-8F0D-0063A5AA45AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>## Usage
@@ -153,21 +179,30 @@ Get in-line suggestions from Google Scholar’s search results via the `scholar`
 ![Google Scholar in-line results](images/about/google-scholar-search-results.png)</string>
 	<key>uidata</key>
 	<dict>
+		<key>31F4F52E-E3BF-429D-9104-965310C817FB</key>
+		<dict>
+			<key>note</key>
+			<string>Optionally set it as a Fallback Search in Features → Default Results</string>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>35</real>
+		</dict>
 		<key>63F60794-BB56-4415-9372-BAF974C3A7E1</key>
 		<dict>
 			<key>note</key>
 			<string>Set your keyword via the "Configure workflow..." button.</string>
 			<key>xpos</key>
-			<real>45</real>
+			<real>230</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>35</real>
 		</dict>
 		<key>AB592125-9803-45FA-8F0D-0063A5AA45AE</key>
 		<dict>
 			<key>xpos</key>
-			<real>255</real>
+			<real>405</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>35</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

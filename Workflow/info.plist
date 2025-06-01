@@ -46,19 +46,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>text</key>
-				<string>Search Google Scholar with Suggestions for '{query}'</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.fallback</string>
-			<key>uid</key>
-			<string>31F4F52E-E3BF-429D-9104-965310C817FB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -91,6 +78,7 @@ function makeItems(itemNames) {
       "uid": name,
       "title": name,
       "subtitle": "Search “" + name + "” on Google Scholar",
+      "autocomplete": name,
       "arg": name
     }
   })
@@ -167,6 +155,19 @@ function run(argv) {
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>AB592125-9803-45FA-8F0D-0063A5AA45AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>Search Google Scholar with Suggestions for '{query}'</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>31F4F52E-E3BF-429D-9104-965310C817FB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
